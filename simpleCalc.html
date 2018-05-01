@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="simpleCalc.css">
+    <title>Simple Calc</title>
+</head>
+
+<body>
+    <form name="calculadora">
+        <!-- Visor -->
+        <input placeholder="Calculadora Simples" id="txt" class="visor" type="text" name="visor" />
+
+        <!-- operadores -->
+        <section>
+            <div class="operador">
+                <input class="btn " type="button" value="+" onclick="botao(value)" />
+                <input class="btn " type="button" value="-" onclick="botao(value)" />
+                <input class="btn " type="button" value="*" onclick="botao(value)" />
+                <input class="btn " type="button" value="/" onclick="botao(value)" />
+            </div>
+
+            <!-- Números -->
+            <div id="tecladoNumerico">
+                <input class="btn" type="button" value="9" onclick="botao(value)" />
+                <input class="btn" type="button" value="8" onclick="botao(value)" />
+                <input class="btn" type="button" value="7" onclick="botao(value)" />
+                <input class="btn" type="button" value="6" onclick="botao(value)" />
+                <input class="btn" type="button" value="5" onclick="botao(value)" />
+                <input class="btn" type="button" value="4" onclick="botao(value)" />
+                <input class="btn" type="button" value="3" onclick="botao(value)" />
+                <input class="btn" type="button" value="2" onclick="botao(value)" />
+                <input class="btn" type="button" value="1" onclick="botao(value)" />
+                <input id="zero" class="btn" type="button" value="0" onclick="botao(value)" />
+                <input class="btn" type="button" value="." onclick="botao(value)" />
+            </div>
+            <!-- Limpa -->
+            <div class="limpeza">
+                <!-- <input class="btn" type="button" value="." onclick="botao(value)" /> -->
+                <input class="btn" type="button" value="←" id="excluir" />
+                <input class="btn" type="button" value="CE" onclick="reset()" />
+                <input id="igual" class="btn" type="button" value="=" onclick="calcule()" />
+            </div>
+        </section>
+    </form>
+</body>
+<script src="simpleCalc.js"></script>
+
+</html>

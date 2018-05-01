@@ -1,0 +1,64 @@
+    body {
+        overflow: hidden;
+        background-color: black;
+        color: whitesmoke;
+    }
+    
+    form {
+        width: 500px;
+        height: 680px;
+        border: 2px solid white;
+        margin: auto;
+        /* text-align: left; */
+    }
+    
+    .visor {
+        width: 95%;
+        height: 100px;
+        margin: 2.5%;
+        font-weight: bolder;
+        border: 2px solid white;
+        color: black;
+        text-indent: 30%;
+        font-size: 55px;
+    }
+    
+    section {
+        display: flex;
+        width: 500px;
+        margin-left: 8%;
+        flex-wrap: wrap;
+        height: 500px;
+    }
+    
+    .btn {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        border: 2px solid white;
+        color: whitesmoke;
+    }
+    
+    #tecladoNumerico {
+        width: 310px;
+    }
+    
+    #zero {
+        width: 204px;
+    }
+    
+    #igual {
+        height: 200px;
+    }
+    
+    .limpeza {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100px;
+        margin-bottom: 100px;
+        margin-left: 2px;
+    }
+    
+    input {
+        font-size: 40px;
+    }
